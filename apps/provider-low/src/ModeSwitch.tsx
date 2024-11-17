@@ -1,6 +1,6 @@
-import Switch from "@mui/material/Switch";
-import { useColorScheme } from "@mui/material/styles";
-import React from "react";
+// import Switch from "@mui/material/Switch";
+// import { useColorScheme } from "@mui/material/styles";
+import { Switch, useColorScheme } from "@mui/material";
 
 type Props = {};
 

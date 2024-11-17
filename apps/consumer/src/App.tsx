@@ -140,10 +140,10 @@ const App = () => {
       </React.Suspense>
       <p>From Privider Low</p>
       <React.Suspense>
-        <WPProviderButton />
+        <PLProviderButton />
       </React.Suspense>
       <React.Suspense>
-        <WPSwitchButton />
+        <PLSwitchButton />
       </React.Suspense>
     </CssVarProvider>
   );

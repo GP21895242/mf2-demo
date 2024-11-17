@@ -1,0 +1,37 @@
+{
+  "name": "common",
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rslib build",
+    "dev": "rslib build --watch"
+  },
+  "devDependencies": {
+    "@rsbuild/plugin-react": "^1.0.7",
+    "@rslib/core": "^0.0.18",
+    "@swc/helpers": "^0.5.15",
+    "@swc/plugin-emotion": "^7.0.1",
+    "@types/react": "^18.3.12",
+    "react": "^18.3.1",
+    "typescript": "^5.6.3"
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.15.19",
+    "@mui/material": "^5.15.19",
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  }
+}

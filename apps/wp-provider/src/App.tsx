@@ -1,11 +1,22 @@
-import './App.css';
+import { Box } from "common";
+// import { Box } from "@mui/material";
+import Button from "./button";
+import ModeSwitch from "./ModeSwitch";
+import {
+  CssBaseline,
+  Experimental_CssVarsProvider as CssVarProvider,
+  experimental_extendTheme as extendTheme,
+} from "@mui/material";
 
 const App = () => {
   return (
-    <div className="content">
-      <h1>Rsbuild with React</h1>
-      <p>Start building amazing things with Rsbuild.</p>
-    </div>
+    <CssVarProvider>
+      <CssBaseline />
+      <Box>
+        <Button />
+        <ModeSwitch />
+      </Box>
+    </CssVarProvider>
   );
 };
 
